@@ -4,7 +4,6 @@ export const UPDATE_TODO = 'UPDATE_TODO'
 
 
 export function addTodo(todo){
-	console.log(todo)
 	return{
 		type: 'ADD_TODO',
 		payload: todo,

@@ -5,9 +5,7 @@ export let reducer = (state=todos, action) => {
 	let newTodos 
 	switch(action.type){
 		case ADD_TODO:
-			newTodos = [...state]
-			return newTodos = newTodos.push(action.payload)
-			console.log(newTodos)
+			 return [...state, action.payload]
 		case DELETE_TODO:
 			newTodos = [...state]
 			return newTodos = newTodos.filter(todo => todo.id !== action.payload)
